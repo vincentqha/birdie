@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    padding: 10px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    color: #E5E9F0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.beta-indicator {
+    color: #FFD166;
+}
+
+.badge {
+    background-color: #0D98BA;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.instructions-container {
+    color: #E5E9F0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.instructions {
+    background-color: #E5E9F0;
+    color: black;
+    padding: 19px;
+    border-radius: 2px;
+}
+
+.court-container {
+    color: #E5E9F0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 35vh;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: red;
+    font-family: Inter, sans-serif;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+.input-space {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.leave-button {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+.court-title {
+    margin-bottom: 3px;
+}
+
+.queued-indicator {
+    display: flex;
+}
+
+.user-indicator {
+    color: #0D98BA;
+}
+
+.admin-indicator {
+    color: #FFD166;
+}
+
+.join-button {
+    color: #E5E9F0;
+    background-color: #0D98BA;
+    font-weight: bold;
+}
+
+.playing-indicator {
+    background-color: #D8DEE9;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.queued-at-indicator {
+    padding: 10px;
+    text-align: left;
+    border-color: transparent;
+    border-radius: 2px;
+    font-family: Inter, sans-serif;
+    cursor: pointer;
+    background-color: #E5E9F0;
+    color: black;
+}
+
+table,
+tr {
+    border: 1px solid black;
+    color: black;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #E5E9F0;
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    text-align: left;
+    border-color: transparent;
+    border-radius: 2px;
+    font-family: Inter, sans-serif;
+    cursor: pointer;
+    background-color: #E5E9F0;
+}
+
+input {
+    padding: 10px;
+    text-align: left;
+    font-family: Inter;
+    border-color: transparent;
+    width: 90%;
+}
+
+.header-container h2 {
+    margin: 2px;
+}
+
+.queued-container {
+    color: #E5E9F0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.queued {
+    background-color: #E5E9F0;
+    color: black;
+    padding: 20px;
+}
+
+.queued-container input {
+    width: 100%;
+}
+
+.align-right {
+    float: right;
+}
+
+.title-color {
+    color: #E5E9F0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .instructions-container {
+        width: 700px;
+        justify-content: center;
+    }
+
+    .main-container {
+        align-items: center;
+    }
+
+    .header-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 700px;
+    }
+
+    .queued-container {
+        width: 700px;
+    }
+
+    .court-container {
+        width: 700px;
+    }
+
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>birdie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-container">
+        <header class="header">
+            <h2>birdie <span class="beta-indicator">beta</span></h2>
+            <span class="badge">SCHS Gym</span>
+        </header>
+    </div>
+    <div class="main-container">
+
+        <div id="instructions" class="instructions-container">
+            <span>Instructions</span>
+            <div class="instructions">
+                To join the queue, enter your name + your partner's name.
+            </div>
+        </div>
+
+        <div id="queued-at" class="queued-container hidden">
+            <div class="queued-indicator">
+                <span>Instructions</span>
+                <div id="admin-indicator-container">
+                    <i class="fa-solid fa-hand-sparkles admin-indicator"></i>
+                </div>
+            </div>
+            <div class="queued-at-indicator">
+                Pairs with the PLAYING badge are currently on-court. If you lose the match, please leave the queue by
+                pressing the LEAVE QUEUE button.
+            </div>
+        </div>
+
+        <span class="title-color court-title">
+            Coach Court
+        </span>
+        <div class="court-container">
+            <table id="queue-table" class="table">
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="input" class="input-container">
+            <form id="join-form" autocomplete="off" class="input-space">
+                <input type="text" id="pair-input" placeholder="Enter name + partner">
+                <button id="join-btn" class="join-button" type="submit">
+                    JOIN
+                </button>
+            </form>
+            <div id="leave-form" class="hidden input-space">
+                <button id="leave-btn" class="leave-button" type="button">
+                    LEAVE QUEUE
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/712bf463bf.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.0/firebase-auth-compat.js"></script>
+    <script type="text/javascript" src="db.js"></script>
+    <script type="text/javascript" src="user.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
